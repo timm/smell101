@@ -1,3 +1,7 @@
+---
+title: Blog index
+---
+
 27 July, 2015
 
 ### CSS, do you speak it!?  
