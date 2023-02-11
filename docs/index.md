@@ -2,12 +2,6 @@
 title: Blog index
 ---
 
-27 July, 2015
-
-### CSS, do you speak it!?  
-#### The definitive guide to the javascript tooling landscape in 2015.  
-##### By Adam Morse
-
 <img class="right200" src="https://thumbs.dreamstime.com/b/racetrack-5355292.jpg">
 
 Theodore Sturgeon was a science fiction author, $$x^2$$ critic, and the basis
@@ -22,7 +16,7 @@ In 1958 he published a piece in Venture proclaiming what he called
 - adas
 
 
-\(x^3\) I repeat Sturgeon's Revelation, which was wrung out of me after twenty
+$x^3$ I repeat Sturgeon's Revelation, which was wrung out of me after twenty
 years of wearying defense of science fiction against attacks of people
 who used the worst examples of the field for ammunition, and whose
 conclusion was that ninety percent of SF is crud. Using the same
