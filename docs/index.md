@@ -2,7 +2,6 @@
 title: Blog index
 ---
 
-# sfds
 
 <img class="right200" src="https://thumbs.dreamstime.com/b/racetrack-5355292.jpg">
 
