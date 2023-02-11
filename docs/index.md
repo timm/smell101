@@ -1,8 +1,8 @@
-27 July, 2015>
+27 July, 2015
 
 ### CSS, do you speak it!?  
 #### The definitive guide to the javascript tooling landscape in 2015.  
-##### By Adam Morse>
+##### By Adam Morse
 
 <img class="right200" src="https://thumbs.dreamstime.com/b/racetrack-5355292.jpg">
 
@@ -13,8 +13,8 @@ others.
 
 In 1958 he published a piece in Venture proclaiming what he called
 "Sturgeon's Revelation"
-- >ada
-- >asda
+- ada
+- asda
 - adas
 
 
