@@ -1,20 +1,15 @@
+<!-- vi: set ts=2 tw=2 et : -->
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-  {%- include head.html -%}
-
-  <body>
-    <main class="page-content" aria-label="Content">
-
-	   <small><a href="#">&copy; 2026</a> by <a href="#">timm</a><br>
-	   <div class="top">{%- include menu.html -%}</small>
-	   </div>
-	 <br clear=all>
-
-        {{ content }}
-
-    </main>
-
-  </body>
-
+	<head>	
+		{%- include head.html -%}
+	</head>
+	<body>
+		<small><a href="#">&copy; 2026</a> by <a href="#">timm</a><br>
+			<div class="top">{%- include menu.html -%}</small>
+			</div>
+			<br clear=all>
+			<h1> {{ site.title }} </h2>
+			{{ content }}
+	</body>
 </html>

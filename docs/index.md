@@ -2,6 +2,7 @@
 title: Blog index
 ---
 
+
 <img class="right200" src="https://thumbs.dreamstime.com/b/racetrack-5355292.jpg">
 
 Theodore Sturgeon was a science fiction author, $$x^2$$ critic, and the basis
