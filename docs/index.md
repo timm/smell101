@@ -1,3 +1,4 @@
+# Smell#23  aewqqw
 
 <img class="right200" src="https://thumbs.dreamstime.com/b/racetrack-5355292.jpg">
 
@@ -8,12 +9,12 @@ others.
 
 In 1958 he published a piece in Venture proclaiming what he called
 "Sturgeon's Revelation"
+
 - ada
 - asda
 - adas
 
-
-$$x^3$$ I repeat Sturgeon's Revelation, which was wrung out of me after twenty
+$$x^3$$ I repeat _Sturgeon's_ Revelation, which was wrung out of me after twenty
 years of wearying defense of science fiction against attacks of people
 who used the worst examples of the field for ammunition, and whose
 conclusion was that ninety percent of SF is crud. Using the same

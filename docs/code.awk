@@ -14,8 +14,9 @@ BEGIN {
      Pat = "(" Pat ")"
      In = 0
 }
-!In &&/```/  { In=1; print("<pre><code>")  ; next }
-In  && /```/ { In=0; print("</pre></code>"); next }
+/^# /        { next }
+!In &&/```/  { In=1; print("<pre>")  ; next }
+In  && /```/ { In=0; print("     </pre>\n\n"); next }
              { print(In ? pretty($0) : $0)        }
 
 function pretty(str) { 
