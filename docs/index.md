@@ -1,7 +1,3 @@
----
-title: Blog index
----
-
 
 <img class="right200" src="https://thumbs.dreamstime.com/b/racetrack-5355292.jpg">
 
@@ -27,7 +23,7 @@ etc. is crap. In other words, the claim (or fact) that 90% of science
 fiction is crap is ultimately uninformative, because science fiction
 conforms to the same trends of quality as all other artforms.
 
-```lua
+```
 function cli(options) 
   for k,v in pairs(options) do
     v=tostring(v)
