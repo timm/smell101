@@ -1,4 +1,4 @@
-# Smell#23  aewqqw
+# #23  aewqqw
 
 <img class="right200" src="https://thumbs.dreamstime.com/b/racetrack-5355292.jpg">
 
@@ -26,14 +26,14 @@ conforms to the same trends of quality as all other artforms.
 
 ```
 function cli(options) 
-  for k,v in pairs(options) do
+  for k,v in pairs(options) do -- asdasads 
     v=tostring(v)
     for n,x in ipairs(arg) do
       if x=="-"..(k:sub(1,1)) or x=="--"..k then
         v=v=="false" and "true" or v=="true" and "false" or arg[n+1] end
     end 
     options[k] = coerce(v) end 
-  return options end 
+  return options end
 ```
 
 You don't have to bounce a tennis ball very far in San Francisco

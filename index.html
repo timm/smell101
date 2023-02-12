@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>	
-<title>Smell#23  aewqqw: 101 code smells</title>
+    <title>#23  aewqqw: 101 code smells</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -21,9 +21,11 @@
        margin: auto;
          xbackground: #D8D8D8;
      }
-     pre { background: #eee;}
+     pre { background: #eee; 
+       border:1px solid #ccc; padding:2px; ixmargin-bottom: -3px; }
      img.right200 { width: 200px; border:1px solid #ccc; padding:3px; margin:5px; float:right; }
-     .top ul {list-style: none;padding: 0px;margin: 0px;}
+     .top {width: 100%; background-color: black;}
+     .top ul {width: 100%; list-style: none;padding: 0px;margin: 0px;}
      .top ul li {display: block;position: relative;float: left;border:1px solid #000}
      .top li ul {display: none;}
      .top ul li a {display: block;background: #000;padding: 5px 10px 5px 10px;text-decoration: none; 
@@ -34,12 +36,13 @@
      .top li:hover a {background: #808080;}
      .top li:hover li a:hover {background: #000;}
      .top #drop-nav li ul li {border-top: 0px;}
+     h1 { font-size: 22px;}
+     h2 { font-size: 20px;}
     </style>
 </head>
 <body>
-	<small>101 code smells and how to fix, in Lua.
-		&nbsp;
-		<a href="#">&copy; 2023</a> by <a href="#">timm</a><br>
+	<small>
+      Fixing 101 code smells, for SE+AI (in Lua)<br>
 		<div class="top">
 			<ul id="drop-nav">
 				<li><a href="#">Home</a></li>
@@ -63,11 +66,12 @@
 						<li><a href="#">Questions</a></li>
 					</ul>
 				</li>
-			</ul>
-		</div>
+      </ul>
+    </div>
+    <br clear=left>
+    <a href="#">&copy; 2023</a> by <a href="#">timm</a>
 	</small>
-	<br clear=all>
-<h1>Smell#23  aewqqw</h1>
+  <h1>#23  aewqqw</h1>
 <p><img class="right200" src="https://thumbs.dreamstime.com/b/racetrack-5355292.jpg"></p>
 <p>Theodore Sturgeon was a science fiction author, $$x^2$$ critic, and the basis
 for Kurt Vonnegut's recurring character Kilgore Trout. He was
@@ -91,14 +95,14 @@ fiction is crap is ultimately uninformative, because science fiction
 conforms to the same trends of quality as all other artforms.</p>
 <pre>
 <font color=DarkBlue><b>function</b></font> <font color=brown>cli</font>(options) 
-  <font color=DarkBlue><b>for</b></font> k<font color=gray><b>,</b></font>v <font color=DarkBlue><b>in</b></font> <font color=brown>pairs</font>(options) <font color=DarkBlue><b>do</b></font>
-    v<font color=gray><b>=</b></font><font color=brown>tostring</font>(v)
-    <font color=DarkBlue><b>for</b></font> n<font color=gray><b>,</b></font>x <font color=DarkBlue><b>in</b></font> <font color=brown>ipairs</font>(arg) <font color=DarkBlue><b>do</b></font>
-      <font color=DarkBlue><b>if</b></font> x<font color=gray><b>=</b></font><font color=gray><b>=</b></font><font color=teal>"<font color=gray><b>-</b></font>"</font><font color=gray><b>.</b></font><font color=gray><b>.</b></font>(k:<font color=brown>sub</font>(1<font color=gray><b>,</b></font>1)) <font color=DarkBlue><b>or</b></font> x<font color=gray><b>=</b></font><font color=gray><b>=</b></font><font color=teal>"<font color=gray><b>-</b></font><font color=gray><b>-</b></font>"</font><font color=gray><b>.</b></font><font color=gray><b>.</b></font>k <font color=DarkBlue><b>then</b></font>
-        v<font color=gray><b>=</b></font>v<font color=gray><b>=</b></font><font color=gray><b>=</b></font><font color=teal>"<font color=DarkBlue><b>false</b></font>"</font> <font color=DarkBlue><b>and</b></font> <font color=teal>"<font color=DarkBlue><b>true</b></font>"</font> <font color=DarkBlue><b>or</b></font> v<font color=gray><b>=</b></font><font color=gray><b>=</b></font><font color=teal>"<font color=DarkBlue><b>true</b></font>"</font> <font color=DarkBlue><b>and</b></font> <font color=teal>"<font color=DarkBlue><b>false</b></font>"</font> <font color=DarkBlue><b>or</b></font> arg<font color=gray><b>[</b></font>n<font color=gray><b>+</b></font>1<font color=gray><b>]</b></font> <font color=DarkBlue><b>end</b></font>
+  <font color=DarkBlue><b>for</b></font> k,v <font color=DarkBlue><b>in</b></font> <font color=brown>pairs</font>(options) <font color=DarkBlue><b>do</b></font> <font color=teal>-- asdasads </font>
+    v=<font color=brown>tostring</font>(v)
+    <font color=DarkBlue><b>for</b></font> n,x <font color=DarkBlue><b>in</b></font> <font color=brown>ipairs</font>(arg) <font color=DarkBlue><b>do</b></font>
+      <font color=DarkBlue><b>if</b></font> x==<font color=teal>"-"</font>..(k:<font color=brown>sub</font>(1,1)) <font color=DarkBlue><b>or</b></font> x==<font color=teal>"<font color=teal>--"</font>..k <font color=DarkBlue><b>then</b></font></font>
+        v=v==<font color=teal>"false"</font> <font color=DarkBlue><b>and</b></font> <font color=teal>"true"</font> <font color=DarkBlue><b>or</b></font> v==<font color=teal>"true"</font> <font color=DarkBlue><b>and</b></font> <font color=teal>"false"</font> <font color=DarkBlue><b>or</b></font> arg[n+1] <font color=DarkBlue><b>end</b></font>
     <font color=DarkBlue><b>end</b></font> 
-    options<font color=gray><b>[</b></font>k<font color=gray><b>]</b></font> <font color=gray><b>=</b></font> <font color=brown>coerce</font>(v) <font color=DarkBlue><b>end</b></font> 
-  <font color=DarkBlue><b>return</b></font> options <font color=DarkBlue><b>end</b></font> 
+    options[k] = <font color=brown>coerce</font>(v) <font color=DarkBlue><b>end</b></font> 
+  <font color=DarkBlue><b>return</b></font> options <font color=DarkBlue><b>end</b></font>
      </pre>
 
 <p>You don't have to bounce a tennis ball very far in San Francisco
