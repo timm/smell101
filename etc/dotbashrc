@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+# vim: ft=bash ts=2 sw=2 sts=2 et :
+what=4newbs #
+hi() { 
+  clear
+  tput bold; tput setaf 11
+  cat<<-'EOF'
+ __                       __                __     
+/\ \__                   /\ \__            /\ \    
+\ \ ,_\     __     ____  \ \ ,_\     __    \_\ \   
+ \ \ \/   /'__`\  /',__\  \ \ \/   /'__`\  /'_` \  
+  \ \ \_ /\  __/ /\__, `\  \ \ \_ /\  __/ /\ \L\ \ 
+   \ \__\\ \____\\/\____/   \ \__\\ \____\\ \___,_\
+    \/__/ \/____/ \/___/     \/__/ \/____/ \/__,_ /
+
+	EOF
+  tput bold; tput setaf 14
+  echo "Short cuts:"
+  alias | sed 's/alias /  /'
+  echo ""
+  tput sgr0
+}
+
+here="$(dirname $(cd $( dirname "${BASH_SOURCE[0]}" ) && pwd ))"
+
+alias ..='cd ..'
+alias ...='cd ../../../'
+ 
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias gp="git add *;git commit -am save;git push;git status"
+alias grep='grep --color=auto'
+alias h="history"
+alias hello="git pull" 
+alias ls="ls -G "       
+alias tmux="\tmux -f $here/etc/dottmux "
+alias vi="vim -u $here/etc/vimrc"
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
+export PATH="$PWD:/opt/homebrew/bin:$PATH"
+export EDITOR=$(which pico)
+
+doc() {
+  docco -l classic -o ~/tmp $1
+  cp $here/etc/docco.css ~/tmp
+}
+here() { cd $1; basename `pwd`; }
+#!/usr/bin/env bash
+
+PROMPT_COMMAND='echo -ne "🚀 $(git branch 2>/dev/null | grep '^*' | colrm 1 2):";PS1="$(here ..)/$(here .):\!\e[m ▶ "'
+
+lu() { f=$1; lua $f.lua $*; }
+hi
+
