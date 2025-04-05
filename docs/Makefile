@@ -1,3 +1,4 @@
+SHELL = bash
 pub:
 	@git commit -am save
 	@git push

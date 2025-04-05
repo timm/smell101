@@ -94,14 +94,14 @@ etc. is crap. In other words, the claim (or fact) that 90% of science
 fiction is crap is ultimately uninformative, because science fiction
 conforms to the same trends of quality as all other artforms.</p>
 <pre>
-<font color=DarkBlue><b>function</b></font> <font color=brown>cli</font>(options) 
-  <font color=DarkBlue><b>for</b></font> k,v <font color=DarkBlue><b>in</b></font> <font color=brown>pairs</font>(options) <font color=DarkBlue><b>do</b></font> <font color=teal>-- asdasads </font>
-    v=<font color=brown>tostring</font>(v)
-    <font color=DarkBlue><b>for</b></font> n,x <font color=DarkBlue><b>in</b></font> <font color=brown>ipairs</font>(arg) <font color=DarkBlue><b>do</b></font>
-      <font color=DarkBlue><b>if</b></font> x==<font color=teal>"-"</font>..(k:<font color=brown>sub</font>(1,1)) <font color=DarkBlue><b>or</b></font> x==<font color=teal>"<font color=teal>--"</font>..k <font color=DarkBlue><b>then</b></font></font>
-        v=v==<font color=teal>"false"</font> <font color=DarkBlue><b>and</b></font> <font color=teal>"true"</font> <font color=DarkBlue><b>or</b></font> v==<font color=teal>"true"</font> <font color=DarkBlue><b>and</b></font> <font color=teal>"false"</font> <font color=DarkBlue><b>or</b></font> arg[n+1] <font color=DarkBlue><b>end</b></font>
+<font color=DarkBlue><b>function</b></font> <font color=darkred>cli</font>(options) 
+  <font color=DarkBlue><b>for</b></font> k,v <font color=DarkBlue><b>in</b></font> <font color=teal><b>pairs</b></font>(options) <font color=DarkBlue><b>do</b></font> <font color=red>-- asdasads </font>
+    v=<font color=teal><b>tostring</b></font>(v)
+    <font color=DarkBlue><b>for</b></font> n,x <font color=DarkBlue><b>in</b></font> <font color=teal><b>ipairs</b></font>(arg) <font color=DarkBlue><b>do</b></font>
+      <font color=DarkBlue><b>if</b></font> x==<font color=red>"-"</font>..(k:<font color=darkred>sub</font>(1,1)) <font color=DarkBlue><b>or</b></font> x==<font color=red>"<font color=red>--"</font>..k <font color=DarkBlue><b>then</b></font></font>
+        v=v==<font color=red>"false"</font> <font color=DarkBlue><b>and</b></font> <font color=red>"true"</font> <font color=DarkBlue><b>or</b></font> v==<font color=red>"true"</font> <font color=DarkBlue><b>and</b></font> <font color=red>"false"</font> <font color=DarkBlue><b>or</b></font> arg[n+1] <font color=DarkBlue><b>end</b></font>
     <font color=DarkBlue><b>end</b></font> 
-    options[k] = <font color=brown>coerce</font>(v) <font color=DarkBlue><b>end</b></font> 
+    options[k] = <font color=darkred>coerce</font>(v) <font color=DarkBlue><b>end</b></font> 
   <font color=DarkBlue><b>return</b></font> options <font color=DarkBlue><b>end</b></font>
      </pre>
 
